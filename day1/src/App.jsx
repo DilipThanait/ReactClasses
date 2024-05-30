@@ -1,14 +1,15 @@
 import "./App.css";
 import Card from "./components/Card";
+import Footer from "./components/Footer";
 import Newprops from "./components/Newprops";
 import Ourteam from "./components/Ourteam";
 
 function App() {
-  const person = [
+  const ktaharukoname = [
     "sagar",
     "rahul",
     "sachin",
-    "saurabh",
+    "sanjok",
     "sourav",
     "kunal",
     "raj",
@@ -24,7 +25,16 @@ function App() {
 
       <Ourteam />
 
-      <Newprops name="sagar" age={10} isMarried={true} person={person} />
+      <Newprops name="sagar" age="10" />
+
+      <Footer
+        name="sagar"
+        email="sagar@gm.com"
+        contact={1234567890}
+        age={10222}
+        isMarried={true}
+        ktaharu={ktaharukoname}
+      />
     </>
   );
 }
