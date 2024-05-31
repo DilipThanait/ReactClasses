@@ -1,27 +1,34 @@
-import PropTypes from "prop-types";
-
 const Footer = (props) => {
+  const { name, email, contact, age, isMarried, ktaharu } = props;
+
+  const [ktaharu1, ktaharu2, arkokta] = ktaharu;
+
+  return (
+    <>
+      <div>
+        <p>
+          {name}
+          {email}
+          {contact}
+          {age}
+          {isMarried.toString()}
+          {ktaharu1}
+          {ktaharu2}
+          {arkokta}
+        </p>
+        <Footer2 />
+      </div>
+    </>
+  );
+};
+
+const Footer2 = () => {
   return (
     <div>
-      <p>
-        {props.name}
-        {props.email}
-        {props.contact}
-        {props.age}
-        {props.isMarried.toString()}
-        {props.ktaharu[0]}
-      </p>
+      <h1>hi i am footer 2</h1>
     </div>
   );
 };
 
-Footer.propTypes = {
-  name: PropTypes.string.isRequired,
-  email: PropTypes.string.isRequired,
-  contact: PropTypes.number.isRequired,
-  age: PropTypes.number.isRequired,
-  isMarried: PropTypes.bool.isRequired,
-  ktaharu: PropTypes.array.isRequired,
-};
-
-export default Footer;
+// export default Footer;
+export { Footer, Footer2 };

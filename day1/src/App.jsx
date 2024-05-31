@@ -1,8 +1,10 @@
 import "./App.css";
 import Card from "./components/Card";
-import Footer from "./components/Footer";
+import Destructuring from "./components/Destructuring";
+import { Footer, Footer2 } from "./components/Footer";
 import Newprops from "./components/Newprops";
 import Ourteam from "./components/Ourteam";
+import { PropsDestruc2, PropsDestruc } from "./components/PropsDestruc";
 
 function App() {
   const ktaharukoname = [
@@ -35,6 +37,11 @@ function App() {
         isMarried={true}
         ktaharu={ktaharukoname}
       />
+      <Footer2 />
+      <Destructuring name="kumar" age={10} />
+
+      <PropsDestruc email="2057" password="sagarsdsdfsd" />
+      <PropsDestruc2 />
     </>
   );
 }
