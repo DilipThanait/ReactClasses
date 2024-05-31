@@ -3,3 +3,9 @@
     color:white;
     cursor: pointer;
 }
+
+.btn2{
+    color: aqua;
+    background-color: blue;
+    cursor: pointer
+}

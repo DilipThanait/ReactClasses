@@ -3,6 +3,7 @@ import Card from "./components/Card";
 import DestructClass2 from "./components/DestructClass2";
 import Destructuring from "./components/Destructuring";
 import Event from "./components/Event";
+import EventClass2 from "./components/EventClass2";
 
 import { Exportsersdsd, Exportserdsd2 } from "./components/Exportsersdsd";
 import { Footer, Footer2 } from "./components/Footer";
@@ -57,6 +58,7 @@ function App() {
 
       <Exportsersdsd />
       <Exportserdsd2 />
+      <EventClass2 name="amrit" />
     </>
   );
 }
