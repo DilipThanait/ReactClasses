@@ -1,6 +1,10 @@
 import "./App.css";
 import Card from "./components/Card";
+import DestructClass2 from "./components/DestructClass2";
 import Destructuring from "./components/Destructuring";
+import Event from "./components/Event";
+
+import { Exportsersdsd, Exportserdsd2 } from "./components/Exportsersdsd";
 import { Footer, Footer2 } from "./components/Footer";
 import Newprops from "./components/Newprops";
 import Ourteam from "./components/Ourteam";
@@ -42,6 +46,17 @@ function App() {
 
       <PropsDestruc email="2057" password="sagarsdsdfsd" />
       <PropsDestruc2 />
+      <Event name="sanjok" />
+
+      <DestructClass2
+        name="rolls royce"
+        model="2022"
+        brand="rollsroyce"
+        boys={ktaharukoname}
+      />
+
+      <Exportsersdsd />
+      <Exportserdsd2 />
     </>
   );
 }

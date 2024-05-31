@@ -16,6 +16,4 @@ const PropsDestruc2 = () => {
     </>
   );
 };
-export { PropsDestruc2 };
-
-export default PropsDestruc;
+export { PropsDestruc2, PropsDestruc };
